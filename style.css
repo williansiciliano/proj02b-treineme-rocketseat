@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{ /* PALETA DE CORES */
+  --cor01:#7D7987; /* texto principal */
+  --cor02:#1F1534; /* h1 - footer */
+  --cor03:#89C5CC; /* h1 > span */ 
+  --cor04:#1F1534; /*  nav  (regular e bold) */
+  --cor05:#69B99D; /* botão Whatsapp */
+  --cor06:#3daf87; /* botão Whatsapp HOVER */
+  --cor07: #5922CB; /* cor adicional para efeitos decorativos */
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  /* background-image: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%); */
+  background-image: linear-gradient(180deg, rgba(227, 255, 248, 0) 52.08%, rgba(171, 245, 226, 0.938) 100%);
+  min-height: 100vh;
+}
+
+.page{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 65px;
+  
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 58px;
+}
+
+nav ul{
+  list-style-type: none;
+  display: flex;
+  gap: 48px;
+  font-family: 'Mulish', sans-serif;
+}
+
+nav ul li a{
+  font-size: 18px;
+  color: var(--cor04);
+  text-decoration: none;
+  padding: 5px 10px;
+  opacity: .5;
+}
+
+nav ul li a:hover{
+  color: #fff;
+  border-radius: 4px;
+  background-color: var(--cor03);
+  opacity: 1;
+}
+
+main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 90px = altura do footer que cobre o conteúdo principal por ser display: fixed e ficar por cima 
+  
+  80px - 30px = 80 de espaço pedido no figma que contempla já os 30px de padding top do footer */
+}
+
+section h1{
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 56px;;
+  color: var(--cor02);
+  width: 490px;
+}
+
+section h1 span{
+  color: var(--cor03);
+  font-weight: bold;
+}
+
+section p{
+  color: var(--cor01);
+  width: 440px;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 40px 0;
+}
+
+section strong{
+  font-weight: bold;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+button{
+  padding: 16px 32px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--cor05);
+  border: 1px solid var(--cor05);
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: var(--cor06);
+}
+
+footer{
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: var(--cor02);
+  font-size: 14px;
+  line-height: 28px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  /* margin-top: calc(80px - 30px); */
+  background-color: #f0f0f0;
+  
+}
+
+footer a{
+  color: var(--cor02);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+footer a:visited{
+  color: var(--cor02);
+}
+
+img#balls{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
